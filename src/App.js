@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Movie from './Movie';
 
@@ -26,8 +25,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {movies.map(movie => {
-          return <Movie title={movie.title} poster={movie.poster} />
+        {movies.map((movie, index) => {
+          return <Movie title={movie.title} poster={movie.poster} key={index} />
         })}
       </div>
     );
