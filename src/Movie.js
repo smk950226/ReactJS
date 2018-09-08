@@ -4,7 +4,18 @@ import './Movie.css';
 class Movie extends Component{
     render(){
         return(
-            <h1>Hello This is a movie</h1>
+            <div>
+                <MoviePoster />
+                <h1>Hello This is a movie</h1>
+            </div>
+        )
+    }
+}
+
+class MoviePoster extends Component{
+    render(){
+        return(
+            <img src="https://steamcdn-a.akamaihd.net/steam/apps/416560/header.jpg?t=1504213621" />
         )
     }
 }
