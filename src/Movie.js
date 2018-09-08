@@ -25,4 +25,8 @@ function MoviePoster({poster}){
     )
 }
 
+MoviePoster.propTypes = {
+    poster: PropTypes.string.isRequired
+}
+
 export default Movie;
