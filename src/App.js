@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Movie from './Movie';
-
+ 
 class App extends Component {
 
   state = {
@@ -29,11 +29,11 @@ class App extends Component {
     setTimeout(() => {
       this.setState({
         movies: [
-          ...this.state.movies,
           {
             title: "Trainspotting",
             poster: "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Trainspotting_ver2.jpg/250px-Trainspotting_ver2.jpg"
-          }
+          },
+          ...this.state.movies,
         ]
       })
     }, 3000)
