@@ -27,6 +27,14 @@ class App extends Component {
     greeting: "Hello!"
   }
 
+  componentDidMount(){
+    setTimeout(() => {
+      this.setState({
+        greeting: "Done!"
+      })
+    }, 5000)
+  }
+
   render() {
     return (
       <div className="App">
